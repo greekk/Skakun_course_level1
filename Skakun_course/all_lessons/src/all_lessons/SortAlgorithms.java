@@ -38,7 +38,7 @@ public class SortAlgorithms {
             if(array[max_value_address]<array[i])
                 max_value_address = i;
         }
-        Swap(Nums, max_value_address, ceil);
+        Swap(array, max_value_address, ceil);
         RecursiveSort(array, ceil);
     }
 

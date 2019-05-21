@@ -1,7 +1,0 @@
-1. While, do-while
-2. Parametrizied polimorphism
-3. Factorial
-4. Bubble sort
-5. Quick sort
-6. Binary Search(pre-sort, search)
-7. Array(paired element, one-not paired->return as value)

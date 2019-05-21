@@ -1,5 +1,4 @@
 package all_lessons;
-import all_lessons.SortAlgorithms;
 
 public class BynarySearch {
     public static int[] Nums = {4,7,2,0,1,6,9,44,3,2};
