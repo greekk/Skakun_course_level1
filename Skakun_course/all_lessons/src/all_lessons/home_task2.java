@@ -1,10 +1,15 @@
 package all_lessons;
 
+import static all_lessons.SortAlgorithms.BubbleSort;
+import static all_lessons.SortAlgorithms.RecursiveSort;
+import static all_lessons.BynarySearch.Search;
+
 public class home_task2 {
     //Arrays
     static int[] Nums = new int[10];
 
     static int[] Nums2 = new int[]{4,6,2,54,23,7,9,0,1};
+    static int[] Nums3 = {4,7,2,0,1,6,9,44,3,2};
 
     static float[] Floats = {45.6f,5f,3.14f, 8.9f};
 
@@ -76,7 +81,7 @@ public class home_task2 {
     public static void main(String[] args) {
 
         //testing how to work logical and bitwise operators
-        //LogicalBitwiseOperatorsTest();
+        LogicalBitwiseOperatorsTest();
 
         //loops
         System.out.println("**********While loop*************");
@@ -86,11 +91,19 @@ public class home_task2 {
         TestDoWhileLooper();
 
         //Searches
-        //RecursiveSort(Nums, Nums.length);
-        //BubbleSort(Nums, "desc");
-        for (int num: Nums) {
+        RecursiveSort(Nums2, Nums2.length);
+        System.out.println("**********Recursive Sorting***************");
+        for (int num: Nums2) {
             System.out.println(num);
         }
-
+        BubbleSort(Nums3, "desc");
+        System.out.println("**********Bubble Sorting***************");
+        for (int num: Nums3) {
+            System.out.println(num);
+        }
+        //Binary Search testing
+        int res = Search(Nums3, 7);
+        System.out.println("**********Binary Searching***************");
+        System.out.println(res);
     }
 }

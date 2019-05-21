@@ -2,14 +2,14 @@ package all_lessons;
 
 public class SortAlgorithms {
 
-    public static void Swap(int[] array, int i, int j){
+    private static void Swap(int[] array, int i, int j){
         int tmp = 0;
         tmp = array[j];
         array[j] = array[i];
         array[i] = tmp;
     }
 
-    public static void BubbleSort(int[] array, String order){
+    static void BubbleSort(int[] array, String order){
         int ceil = array.length;
 
         for(int i = 0; i < ceil-1; i++){
@@ -28,7 +28,7 @@ public class SortAlgorithms {
         }
     }
 
-    public static void RecursiveSort(int[] array, int ceil){
+    static void RecursiveSort(int[] array, int ceil){
         ceil--;
         if (ceil == 0)
                 return;
@@ -43,7 +43,7 @@ public class SortAlgorithms {
     }
 
 /*
-    public static void QuickSort(){
+    static void QuickSort(){
 
     }
 */
