@@ -42,10 +42,32 @@ public class SortAlgorithms {
         RecursiveSort(array, ceil);
     }
 
-/*
-    static void QuickSort(){
+
+    static void QuickSort(int[] array, int start, int end){
+        if(start >= end)
+            return;
+        int i = start;
+        int j = end-1;
+
+        int pivot = i - (i - j)/2;
+
+        while(i < j){
+            while((array[i]<= array[pivot]) && (i < pivot))i++;
+            while((array[j] > array[pivot]) && (j > pivot))j--;
+
+            if(i < j){
+                Swap(array, i,j);
+                if(i == pivot)
+                    pivot = j;
+                else if(j == pivot)
+                    pivot = i;
+            }
+
+
+        }
+        QuickSort(array, start, pivot);
+        QuickSort(array, pivot+1, end);
 
     }
-*/
 
 }

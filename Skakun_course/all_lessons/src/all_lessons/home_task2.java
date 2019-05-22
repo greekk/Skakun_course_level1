@@ -3,6 +3,7 @@ package all_lessons;
 import static all_lessons.SortAlgorithms.BubbleSort;
 import static all_lessons.SortAlgorithms.RecursiveSort;
 import static all_lessons.BynarySearch.Search;
+import static all_lessons.SortAlgorithms.QuickSort;
 
 public class home_task2 {
     //Arrays
@@ -15,6 +16,8 @@ public class home_task2 {
 
     static String[] StringArray = new String[4];
 
+
+    //Function for logical tests
     static boolean Foo(){
 
         System.out.println("I'm Foo!!!");
@@ -29,33 +32,33 @@ public class home_task2 {
     static void LogicalBitwiseOperatorsTest(){
 
         boolean result = Foo() || Bar();
-        System.out.println(result);
+        System.out.println(result + " result of logical OR");
 
         result = Bar() || Foo();
-        System.out.println(result);
+        System.out.println(result + " result of logical OR");
 
         result = Foo() | Bar();
-        System.out.println(result);
+        System.out.println(result + " result of bitwise OR");
 
         result = Bar() | Foo();
-        System.out.println(result);
+        System.out.println(result + " result of bitwise OR");
 
         System.out.println("***************************");
 
         result = Foo() && Bar();
-        System.out.println(result);
+        System.out.println(result + " result of logical AND");
 
         result = Bar() && Foo();
-        System.out.println(result);
+        System.out.println(result + " result of logical AND");
 
         result = Foo() & Bar();
-        System.out.println(result);
+        System.out.println(result + " result of bitwise AND");
 
         result = Bar() & Foo();
-        System.out.println(result);
+        System.out.println(result + " result of bitwise AND");
 
     }
-
+    //While, Do-while loops functions
     static void TestWhileLooper(){
 
         int i = 0;
@@ -98,6 +101,12 @@ public class home_task2 {
         }
         BubbleSort(Nums3, "desc");
         System.out.println("**********Bubble Sorting***************");
+        for (int num: Nums3) {
+            System.out.println(num);
+        }
+        //QuickSorting testing
+        QuickSort(Nums3, 0, Nums3.length);
+        System.out.println("**********Quick Sorting***************");
         for (int num: Nums3) {
             System.out.println(num);
         }
